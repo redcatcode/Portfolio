@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Green_energy";
+    src: url(fonts/Green_Energy[1].woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Monstr_energy";
+    src: url(fonts/MonsterEnergy.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    --green_energy: "Green_energy";
+    --monstr_energy: "Monstr_energy";
+    --black_color: #000000;
+    --green_color: #95D600;
+    --green_neon_color: #ACE500;
+    --green_grass_color: #6CC24A;
+    --grey_color: #2b2e2b;
+    margin: 0;
+}
+
+/* ------------------------------------------- */
+
+.header.base {
+    width: 100%;
+    height: 25vh;
+    background-color: var(--grey_color);
+    box-shadow: 5px 10px 5px var(--green_neon_color);
+    position: relative;
+    z-index: 2;
+}
+
+.title.base {
+    width: 80vh;
+    height: 90%;
+    position: relative;
+}
+
+.title.logo {
+    width: 25vh;
+    height: 22vh;
+}
+
+.title.monster_text {
+    width: 15vh;
+    font-family: var(--green_energy);
+    color: var(--green_neon_color);
+    margin: 0;
+    margin-bottom: 3vh;
+    font-size: 50px;
+    position: absolute;
+    left: 25vh;
+    top: 3vh;
+}
+
+.title.energy_text {
+    width: 15vh;
+    font-family: var(--green_energy);
+    color: var(--green_color);
+    margin: 0;
+    font-size: 35px;
+    position: absolute;
+    left: 25vh;
+    top: 8vh;
+}
+
+.header.registr_btn {
+    width: 25vh;
+    height: 10vh;
+    font-family: var(--green_energy);
+    font-size: 30px;
+    border-radius: 14px;
+    border-color: var(--green_neon_color);
+    border-width: 10px;
+    color: var(--green_neon_color);
+    background-color: var(--grey_color);
+    position: absolute;
+    top: 8vh;
+    right: 25vh;
+}
+
+.header.registr_btn:hover {
+    cursor: pointer;
+    background-color: #5a5a5a;
+}
+
+
+/* ------------------------------------------- */
+
+
+.anim_and_quote.base {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--grey_color);
+    background: radial-gradient(circle, #4a4a4a, var(--grey_color));
+    box-shadow: 5px 10px 5px var(--green_neon_color);
+    font-family: var(--green_energy);
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes back_and_forth {
+0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(15vh);
+}
+100% {
+    transform: translateY(0);
+}
+}
+
+.anim_and_quote.animation {
+    width: 50vh;
+    height: 50vh;
+    animation: back_and_forth 2s infinite ease-in-out;
+    position: absolute;
+    top: 30vh;
+    right: 50vh;
+}
+
+.anim_and_quote.quote {
+    width: 50vh;
+    height: 50vh;
+    color: var(--green_neon_color);
+    font-size: 64px;
+    position: absolute;
+    top: 35vh;
+    left: 40vh;
+}
+
+
+/* ------------------------------------------- */
+
+
+.scrol.base {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--grey_color);
+    font-family: var(--green_energy);
+}
+
+.scrol.box {
+    width: 80%;
+    height: 50vh;
+    background: radial-gradient(circle, var(--grey_color), #414141 );
+    border-color: #000000;
+    box-sizing: 5px;
+    border-radius: 14px;
+    margin-inline: 10%;
+    padding: 5vh;
+    display: flex;
+    overflow: auto;
+    column-gap: 20px;
+}
+
+.scrol.element {
+    width: 30vh;
+    height: 45vh;
+    background: radial-gradient(circle, var(--grey_color), #6b6a6a );
+    border-color: #000000;
+    border-radius: 14px;
+    border-width: 200px;
+}
+
+@keyframes up_and_down {
+0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(10px);
+}
+100% {
+    transform: translateY(0);
+}
+}
+
+.scrol.element:hover  {
+    animation: up_and_down 1s infinite ease-in-out;
+}
+
+.img_elm.ultra {
+    width: 30vh;
+    height: 30vh;
+}
+
+.img_elm.white {
+    width: 20vh;
+    height: 30vh;
+    margin-left: 5vh;
+}
+
+.img_elm.ultra_red {
+    width: 30vh;
+    height: 28vh;
+    margin-top: 2vh;
+}
+
+.btn_elm {
+    width: 20vh;
+    height: 8vh;
+    margin-left: 2vh;
+    margin-top: 5vh;
+    font-family: var(--green_energy);
+    font-size: 30px;
+    border-radius: 14px;
+    border-color: var(--green_neon_color);
+    border-width: 8px;
+    color: var(--green_neon_color);
+    background-color: var(--grey_color);
+}
+
+.btn_elm:hover{
+    cursor: pointer;
+    background-color: #5a5a5a;
+}
+
+
